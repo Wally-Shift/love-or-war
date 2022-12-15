@@ -1,3 +1,5 @@
+import './App.css';
+import Result from './screen/Result';
 import { Routes, Route } from "react-router-dom"
 
 import Header from "./components/Header"
@@ -11,10 +13,10 @@ import Characters from './components/Characters';
 function App() {
   return (
     <div className="App">
-
       <Header />
       <Characters />
       <Game />
+      <Result />
       <Footer />
 
       {/* <Routes>
