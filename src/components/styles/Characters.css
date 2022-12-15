@@ -1,0 +1,10 @@
+.charac-img {
+    width: 200px;
+}
+
+.charac-Match {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
