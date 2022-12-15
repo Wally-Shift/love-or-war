@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-image: url(./../pictures/sabreRose7.png);
+    background-size: contain;
+    width: 100%;
+    height: 80px;
+    border-top: solid, 10px, pink;
+}
+
+.miniYoda {
+    height: 15px;
+}
+
+.team {
+    font-size: 0.85em;
+    padding: 5px;
+    color: rgb(174, 148, 252);
+    margin: 0;
+}
+
+.hackathon {
+    font-size: 0.8em;
+    padding: 5px;
+    color: azure;
+    margin: 0;
+}
