@@ -1,0 +1,23 @@
+.Cards-photo {
+    width: 150px;
+    height: 200px;
+    border: 2mm ridge rgba(144, 153, 50, 0.6);
+}
+
+.Cards-item {
+    background-image: url(./pictures/character_background.jpg);
+    width: 290px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    color: yellow;
+}
+
+.Cards-item h3,
+.Cards-item h4 {
+    text-align: center;
+}
+
+marquee {
+    height: 180px;
+}

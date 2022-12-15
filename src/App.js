@@ -5,18 +5,18 @@ import Game from "./screens/Game"
 import Footer from './components/Footer'
 
 import './App.css';
+import Characters from './components/Characters';
+
 
 function App() {
   return (
     <div className="App">
 
-      
-
       <Header />
-      <Game/>
+      <Characters />
+      <Game />
       <Footer />
 
-      
       {/* <Routes>
         <Route path="#" element={<Home />} />
         <Route path="/" element={<Games />} />
@@ -24,7 +24,7 @@ function App() {
       </Routes> */}
 
     </div>
-  );
+  )
 }
 
 export default App;
