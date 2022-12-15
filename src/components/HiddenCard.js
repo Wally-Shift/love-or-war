@@ -8,7 +8,7 @@ const HiddenCard = () => {
 	return (
         <>
             <div className="pic">
-                <img class="pict" src= {picLink} alt="Faster than light par Casey Horner" onClick={(e) =>setPicLink(avatar) ? (ftl) : (avatar)} />
+                <img class="pict" src= {picLink} alt="Faster than light par Casey Horner" onClick={(e) =>setPicLink(avatar)} />
             </div>
         </>
 	)
