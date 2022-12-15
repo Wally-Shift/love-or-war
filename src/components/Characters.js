@@ -1,15 +1,21 @@
 import { useEffect, useState } from "react"
 import Cards from "./Cards"
 import "./styles/Characters.css"
+import logocoeur from '../pictures/logocoeur.png';
 
 const Characters = () => {
     const [characterInfos01, setCharacterInfos01] = useState([])
     const [characterInfos02, setCharacterInfos02] = useState([])
+    function getRandomInt() {
+        const min = Math.ceil(1);
+        const max = Math.floor(88);
+        return Math.floor(Math.random() * (88 - 1) + 1);
+    }
     useEffect(() => {
-        fetch("https://miadil.github.io/starwars-api/api/id/87.json")
+        fetch(`https://miadil.github.io/starwars-api/api/id/${getRandomInt()}.json`)
             .then((res) => res.json())
             .then((res) => setCharacterInfos01(res))
-        fetch("https://miadil.github.io/starwars-api/api/id/25.json")
+        fetch(`https://miadil.github.io/starwars-api/api/id/${getRandomInt()}.json`)
             .then((res) => res.json())
             .then((res) => setCharacterInfos02(res))
     }, [])
@@ -17,6 +23,7 @@ const Characters = () => {
     return (
         <div>
             <section className="charac-Match">
+                <div className="characters">
                 <div>
                     <Cards
                         name={characterInfos01.name}
@@ -28,6 +35,7 @@ const Characters = () => {
                         hairColor={characterInfos01.hairColor}
                     />
                 </div>
+                <img src={logocoeur} className="coeur-result1" alt="logo-coeur" />
                 <div>
                     <Cards
                         name={characterInfos02.name}
@@ -39,6 +47,8 @@ const Characters = () => {
                         hairColor={characterInfos02.hairColor}
                     />
                 </div>
+                </div>
+                <div className="btn"><button>Return</button></div>
             </section>
         </div>
     )

@@ -13,11 +13,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Home />
+      {/* <Home /> */}
       <Characters />
-      <Game />
+      {/* <Game />
       <Result />
-      <Footer />
+      <Footer /> */}
 
       {/* <Routes>
         <Route path="#" element={<Home />} />

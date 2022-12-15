@@ -4,7 +4,18 @@
 
 .charac-Match {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
+}
+
+.characters {
+    display: flex;
+}
+
+.btn {
+    font-size: 30px;
+    background-color: #f7915c;
+    border: none;
+    border-radius: 10px;
 }

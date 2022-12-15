@@ -6,7 +6,7 @@ import logoeclair from '../pictures/logoeclair.jpg';
 
 const Result = () => {
 
-    // const idRandom =getRandom()
+//     const idRandom =getRandom()
 // // function getRandomInt(1, 88) {
 // //     min = Math.ceil(1);
 // //     max = Math.floor(88);
@@ -14,9 +14,9 @@ const Result = () => {
 // // }
 
     return (
-        <div>
+        <div id="resultpage">
             <img src={logocoeur} className="coeur-result1" alt="logo-coeur" />
-            <button>Return</button>
+            <div className="btn"><button>Return</button></div>
         </div>
     )
 }
