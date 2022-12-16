@@ -1,16 +1,35 @@
 h1 {
-    margin: 0;
     font-size: 3em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    color: rgb(242, 244, 246);
-
+    font-family: 'Star Jedi', Helvetica, sans-serif;
+    color: aliceblue;
 }
 
+.titre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.titre1 {
+    margin: 0;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.titre2 {
+    margin: 0;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.titre3 {
+    margin: 0;
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+
 .home_1 {
-    background: url("./pictures/War1.jpg");
-    height: 100vh;
-    width: auto;
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -22,7 +41,7 @@ h1 {
     height: 14em;
     border: 2px solid white;
     height: 213px;
-    width: 300px;
+    width: 400px;
     border-radius: 15px;
 }
 
@@ -31,7 +50,7 @@ h1 {
     height: 14em;
     border: 2px solid white;
     height: 213px;
-    width: 300px;
+    width: 400px;
     border-radius: 15px;
 }
 
