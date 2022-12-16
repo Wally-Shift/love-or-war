@@ -19,6 +19,9 @@ function App() {
       <Result />
       <Footer /> */}
 
+      <Footer />
+
+      <Header />
       {/* <Routes>
         <Route path="#" element={<Home />} />
         <Route path="/" element={<Games />} />
