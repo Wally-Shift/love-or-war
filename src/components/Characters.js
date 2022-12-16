@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import Cards from "./Cards"
 import "./styles/Characters.css"
 import logocoeur from '../pictures/logocoeur.png';
+import logoeclair from '../pictures/logoeclair.png';
 
 const Characters = () => {
     const [characterInfos01, setCharacterInfos01] = useState([])
@@ -19,36 +20,39 @@ const Characters = () => {
             .then((res) => res.json())
             .then((res) => setCharacterInfos02(res))
     }, [])
-
+    const sizeImage = {
+        width: "200px"
+    }
     return (
         <div>
+            <h2> It is scientifically proven that 2 people of different species and with the same eye color can fall in love.  </h2>
             <section className="charac-Match">
                 <div className="characters">
-                <div>
-                    <Cards
-                        name={characterInfos01.name}
-                        image={characterInfos01.image}
-                        gender={characterInfos01.gender}
-                        species={characterInfos01.species}
-                        homeworld={characterInfos01.homeworld}
-                        eyeColor={characterInfos01.eyeColor}
-                        hairColor={characterInfos01.hairColor}
-                    />
+                    <div>
+                        <Cards
+                            name={characterInfos01.name}
+                            image={characterInfos01.image}
+                            gender={characterInfos01.gender}
+                            species={characterInfos01.species}
+                            homeworld={characterInfos01.homeworld}
+                            eyeColor={characterInfos01.eyeColor}
+                            hairColor={characterInfos01.hairColor}
+                        />
+                    </div>
+                    {characterInfos01.species !== characterInfos02.species && characterInfos01.eyeColor === characterInfos02.eyeColor ? <div className="charac-coeur-result"><img src={logocoeur} style={sizeImage} alt="logo-coeur" /> </div> : <div className="charac-eclair-result"><img src={logoeclair} style={sizeImage} alt="logo-eclair" /> </div>}
+                    <div>
+                        <Cards
+                            name={characterInfos02.name}
+                            image={characterInfos02.image}
+                            gender={characterInfos02.gender}
+                            species={characterInfos02.species}
+                            homeworld={characterInfos02.homeworld}
+                            eyeColor={characterInfos02.eyeColor}
+                            hairColor={characterInfos02.hairColor}
+                        />
+                    </div>
                 </div>
-                <img src={logocoeur} className="coeur-result1" alt="logo-coeur" />
-                <div>
-                    <Cards
-                        name={characterInfos02.name}
-                        image={characterInfos02.image}
-                        gender={characterInfos02.gender}
-                        species={characterInfos02.species}
-                        homeworld={characterInfos02.homeworld}
-                        eyeColor={characterInfos02.eyeColor}
-                        hairColor={characterInfos02.hairColor}
-                    />
-                </div>
-                </div>
-                <div className="btn"><button>Return</button></div>
+                <div><button>Return</button></div>
             </section>
         </div>
     )

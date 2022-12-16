@@ -2,10 +2,10 @@
     width: 150px;
     height: 200px;
     border: 2mm ridge rgba(144, 153, 50, 0.6);
+    border: 15px;
 }
 
 .Cards-item {
-    background-image: url(./pictures/character_background.jpg);
     width: 290px;
     height: 400px;
     padding: 20px;

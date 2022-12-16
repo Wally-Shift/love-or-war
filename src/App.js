@@ -1,5 +1,4 @@
 import Home from "./screens/Home";
-import Result from "./screen/Result";
 import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
@@ -15,9 +14,9 @@ function App() {
       <Header />
       {/* <Home /> */}
       <Characters />
-      {/* <Game />
-      <Result />
-      <Footer /> */}
+      {/* /* <Game /> */}
+
+      <Footer /> */
 
       <Footer />
 
