@@ -1,4 +1,4 @@
-
+import avatar from '../pictures/avatar.png';
 import "./styles/Cards.css"
 
 const Cards = (props) => {
@@ -7,9 +7,10 @@ const Cards = (props) => {
 
             <img className="Cards-photo"
                 src={props.image}
+                // === null ? <div><img src={avatar} alt={props.name} /> </div> : props.image}
                 alt={props.name}
             />
-            <marquee direction="up" >
+            <marquee direction="up" scrollamount="2" scrolldelay="10">
                 <h3>My name is {props.name}.</h3>
                 <h4>I'm {props.species} {props.gender}.</h4>
                 <h4>My eyes are {props.eyeColor}.</h4>
