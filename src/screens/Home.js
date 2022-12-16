@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <>
+    <div>
       <div className="home_1">
         <img src={Love} className="love" alt="love" />
         <div className="titre">
@@ -14,37 +14,29 @@ function Home() {
           <h1 className="titre3">WAR</h1>
         </div>
         <img src={War} className="war" alt="battle" />
+      </div>
 
+      <div class="fade">
+        <section class="star-wars">
+          <div class="crawl">
+            <p>Episode I</p>
+            <p>A New Hope</p>
+            <p> In a galaxy far away...</p>
+            <p> Two people opposed in every way,</p>
+            <p> Are searching for love </p>
+            <p> We have a solution:</p>
+            <p> A game, before they switch to the dark side of the force</p>
+            <p> The game is simple</p>
+            <p> Flip two cards,</p>
+            <p> If they match, it's LOVE</p>
+            <p> Else, it's WAR.</p>
+            <p> May the 4th be with you</p>
+            <p> But not necessarily in May</p>
+          </div>
+        </section >
+        <Link to="/game" className="grouk">Go to Game</Link><br />
       </div>
-      <div className="Rules">
-        <h2>LES RÈGLES</h2>
-        <section>
-          Episode 1<br />
-          Dans une galaxie très lointaine...
-          <br />
-          Deux êtres que tout oppose,
-          <br />
-          Cherchent l'amour
-          <br />
-          Une solution se présente à eux: <br />
-          Un jeu, avant de sombrer du côté obscure de la Force.
-          <br />
-          Le jeu est simple:
-          <br />
-          Retournes deux cartes,
-          <br />
-          si ça match c'est: LOVE
-          <br />
-          Sinon, ça c'est: WAR.
-          <br />
-          May the 4th be with you
-          <br />
-        </section>
-      </div>
-      <div>
-        <Link to="/game">Got to Game</Link>
-      </div>
-    </>
+    </div>
   );
 }
 
