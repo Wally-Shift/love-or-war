@@ -1,5 +1,5 @@
 import Logo from "../pictures/yodaheart.png";
-import "./Header.css";
+import "../components/styles/Header.css";
 
 function Header() {
     return (
