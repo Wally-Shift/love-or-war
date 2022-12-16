@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="Header">
-      <Link to="/">
-        <img class="Yoda" src={Logo} alt="Yoda Baby" />
+      <Link to="/" className="boutonHome">
+        <img className="Yoda" src={Logo} alt="Yoda Baby" />
       </Link>
-      <div className="vaisseau"></div> {/*div vaisseau */}
+      <div className="vaisseau"></div>
     </div >
   );
 }
