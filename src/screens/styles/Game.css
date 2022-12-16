@@ -1,0 +1,26 @@
+.page{
+    background-color: aqua;
+}
+
+.rowPic{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.match:hover{
+    background-color: brown;
+ }
+
+ .dfg:hover{
+    background-color: brown;
+ }
+ a{
+    border: 1px solid rgb(62, 62, 62);
+    background-color: dimgray;
+    padding: 3px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+   
+ }

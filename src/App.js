@@ -1,11 +1,23 @@
-import { Routes, Route } from "react-router-dom"
-import './App.css';
-import Header from "./components/Header"
-import Footer from "./components/Footer"
+import Home from "./screens/Home";
+import Result from "./screen/Result";
+import { Routes, Route } from "react-router-dom";
+
+import Header from "./components/Header";
+import Game from "./screens/Game";
+import Footer from "./components/Footer";
+
+import "./App.css";
+import Characters from "./components/Characters";
 
 function App() {
   return (
     <div className="App">
+      <Header />
+      {/* <Home /> */}
+      <Characters />
+      {/* <Game />
+      <Result />
+      <Footer /> */}
 
       <Footer />
 
