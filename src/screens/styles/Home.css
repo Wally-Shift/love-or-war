@@ -1,8 +1,6 @@
 h1 {
-    /* margin: 0; */
     font-size: 3em;
     font-family: 'Star Jedi', Helvetica, sans-serif;
-    /* font-style: italic; */
     color: aliceblue;
 }
 
@@ -54,4 +52,8 @@ h1 {
     height: 213px;
     width: 400px;
     border-radius: 15px;
+}
+
+.rules {
+    color: white;
 }

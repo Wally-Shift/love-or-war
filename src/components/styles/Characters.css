@@ -4,7 +4,28 @@
 
 .charac-Match {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
+}
+
+.characters {
+    display: flex;
+}
+
+.charac-coeur-result,
+.charac-eclair-result {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    color: yellow;
+}
+
+button {
+    font-size: 30px;
+    background-color: #f7915c;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
