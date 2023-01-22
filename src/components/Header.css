@@ -1,0 +1,34 @@
+.Yoda {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin-top: 25px;
+    z-index: 10;
+}
+
+.Header {
+    background: transparent;
+    height: 200px;
+}
+
+.vaisseau {
+    position: absolute;
+    width: 200px;
+    height: 47px;
+    background: url("../pictures/vaisseau.png");
+    z-index: 9;
+    top: 45px;
+    animation: animatevaisseau 10s linear infinite;
+    animation-direction: normal;
+}
+
+@keyframes animatevaisseau {
+    0% {
+        left: 0px;
+    }
+
+    100% {
+        left: 90%;
+        opacity: 0.65;
+    }
+}

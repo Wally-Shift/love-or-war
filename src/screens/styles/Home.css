@@ -1,0 +1,125 @@
+h1 {
+    font-size: 3em;
+    font-family: 'Star Jedi', Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+.titre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.titre1 {
+    margin: 0;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.titre2 {
+    margin: 0;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.titre3 {
+    margin: 0;
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+
+.home_1 {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.love {
+    border: 2px solid white;
+    height: 213px;
+    width: 400px;
+    border-radius: 15px;
+}
+
+.war {
+    border: 2px solid white;
+    height: 213px;
+    width: 400px;
+    border-radius: 15px;
+}
+
+.fade {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    top: -25px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.star-wars {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 450px;
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 500%;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    perspective: 400px;
+    text-align: justify;
+}
+
+.crawl {
+    position: relative;
+    top: 99999px;
+    transform-origin: 50% 100%;
+    animation: crawl 60s linear;
+}
+
+.crawl {
+    position: absolute;
+    top: 100%;
+    animation-delay: 3.5s;
+    animation-duration: 25s;
+    animation-name: crawl;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes crawl {
+    0% {
+        top: 100%;
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes crawl {
+    0% {
+        top: -100px;
+        transform: rotateX(26deg) translateZ(0);
+    }
+
+    100% {
+        top: -6000px;
+        transform: rotateX(25deg) translateZ(-2500px);
+    }
+}
+
+p {
+    text-align: center;
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: yellow;
+}
